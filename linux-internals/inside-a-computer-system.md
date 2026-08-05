@@ -299,9 +299,33 @@ The process is:
 
 ---
 
-
-it.karma
+Power Button
+      |
+      v
+PSU
+      |
+      v
+UEFI / BIOS
+      |
+      v
+POST
+      |
+      v
+Bootloader
+      |
+      v
+Kernel
+      |
+      v
+systemd
+      |
+      v
+User Space
 
 But if we want to be very precise:
 
 systemctl and systemd communicate with each other through D-Bus, but if they need to communicate with the Kernel, they can do that separately using system calls.
+
+
+
+it.karam
